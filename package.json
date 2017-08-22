@@ -1,0 +1,24 @@
+{
+  "name": "fis3-postpackage-header",
+  "version": "0.0.1",
+  "description": "fis3 plugin, adding text to packaged resources' header",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g8up/fis3-postpackage-header.git"
+  },
+  "bugs": {
+    "url": "https://github.com/g8up/fis3-postpackage-header/issues"
+  },
+  "homepage": "https://github.com/g8up/fis3-postpackage-header#readme",
+  "keywords": [
+    "fis",
+    "banner",
+    "header"
+  ],
+  "author": "g8up <g8up@qq.com>",
+  "license": "MIT"
+}
