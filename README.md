@@ -1,5 +1,5 @@
 # fis3-postpackager-header
-fis3 plugin, adding text to packaged resources' header
+a fis3 plugin, adding text to packaged resources' header
 
 # Install
 > npm install --global fis3-postpackager-header
