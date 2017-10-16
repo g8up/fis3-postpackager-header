@@ -1,4 +1,6 @@
 # fis3-postpackager-header
+![NPM](https://img.shields.io/npm/v/fis3-postpackager-header.svg)
+
 a fis3 plugin, adding text to packaged resources' header
 
 # Install

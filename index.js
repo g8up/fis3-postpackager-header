@@ -9,8 +9,8 @@ var _ = fis.util;
 module.exports = function (ret, conf, settings, opt) {
 	var header = settings.header;
 	if (header) {
-		_.map(ret.pkg, function (key, pkg) {
-			pkg._content = header + pkg._content;
+		_.map(ret.pkg, function (subpath, file) {
+			file.setContent( header + file.getContent() );
 		});
 	}
 }
