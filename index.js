@@ -7,10 +7,14 @@
 var _ = fis.util;
 
 module.exports = function (ret, conf, settings, opt) {
-	var header = settings.header;
-	if (header) {
-		_.map(ret.pkg, function (subpath, file) {
-			file.setContent( header + file.getContent() );
-		});
+  var header = settings.header;
+  const exts = settings.exts || ['.js', '.css'];
+
+  if (header) {
+		_.map(Object.assign(ret.src, ret.pkg), function (subpath, file) {
+      if( exts.includes(file.ext) ) {
+        file.setContent( header + file.getContent() );
+      }
+    });
 	}
 }
